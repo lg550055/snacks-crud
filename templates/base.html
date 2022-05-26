@@ -5,18 +5,23 @@
     <style>
       body {
         background-color: navy;
-        color: azure;
+        color: lavender;
         padding-top: 7vh;
         text-align: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
+      h3 > a { color: lightgray; text-decoration: underline;}
+      a { color: aquamarine; text-decoration: none; }
     </style>
   </head>
   <body>
     <h3>Welcome to the</h3>
     <h2>Snacks App</h2>
+    <hr>
     {% block content %}
 
     {% endblock %}
+    <hr><br>
+    <a href="{% url 'snack_list' %}">Home ></a>
   </body>
 </html>
